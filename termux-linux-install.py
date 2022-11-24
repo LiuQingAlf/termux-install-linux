@@ -33,7 +33,7 @@ def install_ubuntu():
     tarball = 'ubuntu-rootfs-arm64.tar.xz'
     print("\n正在从码云下载 Rootfs 镜像文件，请耐心等待")
     os.system('git clone "https://gitee.com/sqlsec/termux-ubuntu.git"')
-    print('\n下载完成 看来国内码云的速度还是可以的 2333')
+    print('\n下载完成')
     print('\n正在解压镜像 请耐心等待')
     os.system(f'mkdir -p $HOME/Termux-Linux/{osname}/{folder}')
     os.system(f'proot --link2symlink tar -xf {imagedir}/{tarball} -C $HOME/Termux-Linux/{osname}/{folder} --exclude="dev"||:')
@@ -63,7 +63,7 @@ def install_kali():
     tarball = "kali-rootfs-arm64.tar.xz"
     print("\n正在从码云下载 Rootfs 镜像文件，请耐心等待")
     os.system('git clone "https://gitee.com/sqlsec/termux-kali"')
-    print('\n下载完成 看来国内码云的速度还是可以的 2333')
+    print('\n下载完成')
     print('\n正在解压镜像 请耐心等待')
     os.system(f'mkdir -p $HOME/Termux-Linux/{osname}/{folder}')
     os.system(f'proot --link2symlink tar -xJf {imagedir}/{tarball} -C $HOME/Termux-Linux/{osname}/{folder} ||:')
@@ -93,7 +93,7 @@ def install_debian():
     tarball = "debian-rootfs-arm64.tar.xz"
     print("\n正在从码云下载 Rootfs 镜像文件，请耐心等待")
     os.system('git clone "https://gitee.com/sqlsec/termux-debian"')
-    print('\n下载完成 看来国内码云的速度还是可以的 2333')
+    print('\n下载完成')
     print('\n正在解压镜像 请耐心等待')
     os.system(f'mkdir -p $HOME/Termux-Linux/{osname}/{folder}')
     os.system(f'proot --link2symlink tar -xJf {imagedir}/{tarball} -C $HOME/Termux-Linux/{osname}/{folder} ||:')
@@ -123,7 +123,7 @@ def install_centos():
     tarball = "centos-rootfs-arm64.tar.xz"
     print("\n正在从码云下载 Rootfs 镜像文件，请耐心等待")
     os.system('git clone "https://gitee.com/sqlsec/termux-centos"')
-    print('\n下载完成 看来国内码云的速度还是可以的 2333')
+    print('\n下载完成')
     print('\n正在解压镜像 请耐心等待')
     os.system(f'mkdir -p $HOME/Termux-Linux/{osname}/{folder}')
     os.system(f'proot --link2symlink tar -xJf {imagedir}/{tarball} -C $HOME/Termux-Linux/{osname}/{folder} --exclude="dev"||:')
@@ -156,7 +156,7 @@ def install_fedora():
     tarball = "fedora-rootfs-arm64.tar.xz"
     print("\n正在从码云下载 Rootfs 镜像文件，请耐心等待")
     os.system('git clone "https://gitee.com/sqlsec/termux-fedora"')
-    print('\n下载完成 看来国内码云的速度还是可以的 2333')
+    print('\n下载完成')
     print('\n正在解压镜像 请耐心等待')
     os.system(f'mkdir -p $HOME/Termux-Linux/{osname}/{folder}')
     os.system(f'proot --link2symlink tar -xJf {imagedir}/{tarball} -C $HOME/Termux-Linux/{osname}/{folder} --exclude "dev" ||:')
